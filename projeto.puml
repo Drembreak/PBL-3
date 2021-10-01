@@ -1,0 +1,18 @@
+@startuml
+class Funcionario {
+  nome
+  sexo
+  idade
+}
+class Problema {
+  estado
+  descricao
+}
+Funcionario "1" <- "*"Problema
+
+Class Sugestao{
+aplicada
+descriçao
+}
+Problema "1" <- "*"Sugestao
+@enduml
